@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family:'sathoshi';
+    src: url(Satoshi-Variable.woff2);
+}
+
+:root{
+    --stdmargin:6rem;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+        background-color: black;
+}
+#landingpage{
+    margin:0 var(--stdmargin);
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+
+    column-gap :10px;
+}
+#herosection{
+    margin:auto 0;
+    color:white;
+    grid-column:1/4;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#herotext{
+    font-family:'sathoshi';
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform:capitalize;
+    font-variation-settings: 'weight' 900;
+}
+#herodescription{
+    font-family:'Inter';
+    font-weight:500;
+    color:gray;
+}
+#ctahelper{
+    font-family:'Inter';
+    margin-top:3rem;
+    font-weight: 500;
+    font-size:0.8rem;
+    text-align:center;
+    color:rgb(250, 23, 174);
+}
+#cta{
+    width:100%;
+    padding:15px 30px;
+    gap:10px;
+    background: rgb(251, 41, 213);
+    border-radius:17px;
+    font-family:700;
+    font-size:1.1rem;
+    color:white;
+}
+#cta:hover{
+    scale:110%;
+    box-shadow:4px 4px 25px rgb(230, 54, 212);
+    transition:250ms;
+}
+#logoo{
+position:fixed;
+top:5rem;
+left:var(--stdmargin);
+width:50px;
+}
+#imagesection{
+    height:100vh;
+    grid-column:5/-1;
+    background-image:url(bgim.jpg) ;
+    background-size:cover;
+    background-position:center center;
+    position:relative;
+    right:calc(-1*var(--stdmargin));
+    filter:brightness(0.5);
+}
+#anim{
+    background:linear-gradient(91.61deg,red 2.24%,purple 22.4%,pink 42.2%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    background-size:400% 400%;
+    animation:gradientAnimation 25s ease infinite;
+}
+@keyframes gradientAnimation{
+    0%{
+    background-position:top center;
+}
+25%{
+    background-position:center left;
+}
+50%{
+    background-position: bottom center;
+}
+75%{
+    background-position: center right;
+}100%{
+    background-position:top center;
+}
+}

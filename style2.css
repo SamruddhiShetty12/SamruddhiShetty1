@@ -1,0 +1,24 @@
+:root{
+    --stdmargin:4rem;
+
+}
+body{
+        background-color: rgb(203, 200, 200);
+}
+#div1{
+    text-align:justify;
+    border:5px black;
+    font-size: 30px;
+    background-color: rgb(97, 180, 163);
+    height:300px;
+    width:98%;
+    margin:auto 10;
+}
+#kk:hover{
+    scale:120%;
+    box-shadow:4px 4px 25px rgb(85, 74, 243);
+    transition:250ms;
+}
+#about{
+    color: rgb(0, 13, 14);
+}
